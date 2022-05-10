@@ -18,8 +18,17 @@
     "hardhat": "^2.9.3"
   },
   "dependencies": {
+    "@ethereumjs/block": "^3.6.2",
+    "@ethereumjs/common": "^2.6.4",
+    "deep-eql": "^4.0.1",
+    "depd": "^2.0.0",
     "ethereum-cryptography": "^1.0.3",
     "find-up": "^6.3.0",
-    "fp-ts": "^2.12.1"
+    "fp-ts": "^2.12.1",
+    "iconv-lite": "^0.6.3",
+    "safe-buffer": "^5.2.1",
+    "safer-buffer": "^2.1.2",
+    "setprototypeof": "^1.2.0",
+    "unpipe": "^1.0.0"
   }
 }
