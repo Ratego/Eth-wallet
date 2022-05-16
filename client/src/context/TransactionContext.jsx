@@ -15,7 +15,7 @@ const createEthereumContract = () => {
   return transactionsContract;
 };
 
-export const TransactionsProvider = ({ children }) => {
+export const TransactionProvider = ({ children }) => {
   const [formData, setformData] = useState({ addressTo: "", amount: "", keyword: "", message: "" });
   const [currentAccount, setCurrentAccount] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -68,6 +68,7 @@ export const TransactionsProvider = ({ children }) => {
       }
     } catch (error) {
       console.log(error);
+      throw new Error("No ethereum object");
     }
   };
 
@@ -113,7 +114,7 @@ export const TransactionsProvider = ({ children }) => {
           params: [{
             from: currentAccount,
             to: addressTo,
-            gas: "0x5208",
+            gas: "0x5208",//21000 GWEI or 0.000021 ETH
             value: parsedAmount._hex,
           }],
         });
@@ -155,6 +156,7 @@ export const TransactionsProvider = ({ children }) => {
         isLoading,
         sendTransaction,
         handleChange,
+        setformData,
         formData,
       }}
     >
