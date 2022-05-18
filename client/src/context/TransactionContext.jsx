@@ -114,7 +114,7 @@ export const TransactionProvider = ({ children }) => {
           params: [{
             from: currentAccount,
             to: addressTo,
-            gas: "0x5208",//21000 GWEI or 0.000021 ETH
+            gas: "0x5208",//21000 GWEI or 0.000021 ETH 0x66BDdf60E04524beB8DbB594F378a67C4bF45A5d
             value: parsedAmount._hex,
           }],
         });
