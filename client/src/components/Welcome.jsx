@@ -20,7 +20,7 @@ const Input = ({ placeholder, name, type, value, handleChange}) => (
 );
   
 const Welcome = () => {
-    const { connectWallet, currentAccount, formData, handleChange, sendTransaction } = useContext(TransactionContext);
+    const { connectWallet, currentAccount, formData, handleChange, sendTransaction, isLoading } = useContext(TransactionContext);
     const handleSubmit = (e) => {
         const { addressTo, amount, keyword, message } = formData;
         e.preventDefault();
@@ -74,7 +74,7 @@ const Welcome = () => {
                             </div>
                             <div>
                                 <p className="text-white font-light text-sm">
-                                    {currentAccount}
+                                    {shortenAddress(currentAccount)}
                                 </p>
                                 <p className="text-white font-semibold text-lg mt-1">
                                 Ethereum
@@ -89,7 +89,7 @@ const Welcome = () => {
                         <Input placeholder="Enter Message" name="message" type="text"  handleChange={handleChange} />
 
                         <div className="h-[1px] w-full bg-gray-400 my-2" />
-                        {false ? (
+                        {isLoading ? (
                             <Loader />
                         ): (
                                 <button
