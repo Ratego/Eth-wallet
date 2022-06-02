@@ -1,7 +1,6 @@
-import {Navbar, Welcome, Footer, Transactions, Services, Loader, Cryptocurrencies} from './components';
+import {Navbar, Welcome, Footer, Transactions, Services, Loader, Exchanges, Homepage, News, Cryptocurrencies, CryptoDetails } from './components';
 import { useState } from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
-import { Typography, Space, Layout } from antd;
+import { Typography, Space, Layout } from 'antd';
 
 const App = () => {
   return (
@@ -11,7 +10,11 @@ const App = () => {
         <Welcome/>
       </div>
       <Transactions/>
+      <Homepage />
+      <Exchanges />
       <Cryptocurrencies/>
+      <CryptoDetails />
+      <News />
       <Services/>
       <Footer/>
     </div>

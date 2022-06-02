@@ -4,3 +4,8 @@ export { default as Footer } from './Footer';
 export { default as Transactions } from './Transactions';
 export { default as Welcome } from './Welcome';
 export { default as Services } from './Services';
+export { default as CryptoDetails } from './CryptoDetails';
+export { default as Homepage } from './Homepage';
+export { default as News } from './News';
+export { default as Exchanges } from './Exchanges';
+export { default as Cryptocurrencies } from './Cryptocurrencies';
