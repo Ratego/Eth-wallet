@@ -46,7 +46,7 @@ const Welcome = () => {
                     )}
                     <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
                         <div className={`rounded-tr-2xl rounded-bl-2xl rounded-br-2xl rounded-tl-2xl ${commonStyles}`}>
-                            Reliability
+                            Transak
                         </div>
                         <div className={`rounded-tr-2xl rounded-tl-2xl rounded-br-2xl rounded-bl-2xl ${commonStyles}`}>Security</div>
                         <div className={`sm:rounded-tr-2xl rounded-bl-2xl rounded-tr-2xl rounded-tl-2xl rounded-br-2xl ${commonStyles}`}>
@@ -55,7 +55,7 @@ const Welcome = () => {
                         <div className={`sm:rounded-bl-2xl rounded-br-2xl rounded-tr-2xl rounded-tl-2xl rounded-bl-2xl ${commonStyles}`}>
                             Web 3.0
                         </div>
-                        <div className={`rounded-tr-2xl rounded-tl-2xl rounded-br-2xl rounded-bl-2xl ${commonStyles}`}>Low Fees</div>
+                        <div className={`rounded-tr-2xl rounded-tl-2xl rounded-br-2xl rounded-bl-2xl ${commonStyles}`}>Binance</div>
                         <div className={`rounded-bl-2xl rounded-br-2xl rounded-tr-2xl rounded-tl-2xl ${commonStyles}`}>
                             Blockchain
                         </div>

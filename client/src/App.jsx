@@ -1,4 +1,4 @@
-import {Navbar, Welcome, Footer, Transactions, Services, Loader, Exchanges, Homepage, News, Cryptocurrencies, CryptoDetails } from './components';
+import {Navbar, Welcome, Footer, Transactions, Services, Loader } from './components';
 import { useState } from 'react';
 import { Typography, Space, Layout } from 'antd';
 
@@ -10,11 +10,11 @@ const App = () => {
         <Welcome/>
       </div>
       <Transactions/>
-      <Homepage />
+      {/*<Homepage />
       <Exchanges />
       <Cryptocurrencies/>
       <CryptoDetails />
-      <News />
+  <News />*/}
       <Services/>
       <Footer/>
     </div>
